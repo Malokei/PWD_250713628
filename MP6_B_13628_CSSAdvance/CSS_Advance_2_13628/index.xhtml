@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Workshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Daftar Workshop</h1>
+            <p class="lead">Isi data berikut untuk mengamankan tempatmu di workshop.</p>
+        </header>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <div class="group">
+                <h2>Data peserta</h2>
+
+                <div class="row">
+                    <label for="nama">Nama lengkap</label>
+                    <input type="text" id="nama" name="nama" />
+                </div>
+
+                <div class="row">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" />
+                </div>
+
+                <div class="row">
+                    <span class="name">Jenis kelamin</span>
+                    <div class="choices">
+                        <label><input type="radio" id="laki" name="jk" value="Laki-laki" />Laki-laki</label>
+                        <label><input type="radio" id="perempuan" name="jk" value="Perempuan" />Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="prodi">Asal jurusan</label>
+                    <select id="prodi" name="prodi">
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="group">
+                <h2>Pilihan workshop</h2>
+
+                <div class="row">
+                    <span class="name">Status kamu</span>
+                    <div class="choices">
+                        <label><input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" />Mahasiswa</label>
+                        <label><input type="radio" id="umum" name="peserta" value="Umum" />Umum</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <span class="name">Materi yang diminati</span>
+                    <div class="checks">
+                        <label><input type="checkbox" id="uiux" name="materi" value="UI/UX Design" />UI/UX Design</label>
+                        <label><input type="checkbox" id="webdev" name="materi" value="Web Development" />Web Development</label>
+                        <label><input type="checkbox" id="data" name="materi" value="Data Analysis" />Data Analysis</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <h2>Informasi tambahan</h2>
+
+                <div class="row">
+                    <label for="alasan">Apa yang ingin kamu pelajari?</label>
+                    <textarea id="alasan" name="alasan" rows="6"></textarea>
+                </div>
+
+                <div class="row">
+                    <span class="name">Metode pembayaran</span>
+                    <div class="choices">
+                        <label><input type="radio" id="qris" name="pembayaran" value="QRIS" />QRIS</label>
+                        <label><input type="radio" id="transfer" name="pembayaran" value="Transfer Bank" />Transfer bank</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="bukti">Bukti pembayaran</label>
+                    <input type="file" id="bukti" name="bukti" />
+                </div>
+            </div>
+
+            <div class="actions">
+                <input type="submit" name="daftar" value="Daftar workshop" />
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

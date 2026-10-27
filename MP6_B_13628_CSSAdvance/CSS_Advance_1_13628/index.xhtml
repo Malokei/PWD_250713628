@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabung Bersama Kami</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="page">
+        <h1>Gabung Bersama Kami</h1>
+        <p class="intro">Isi data diri dan ceritakan motivasimu untuk bergabung.</p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Data diri</legend>
+
+                <div class="field">
+                    <label for="nama">Nama lengkap</label>
+                    <input type="text" id="nama" name="nama" />
+                </div>
+
+                <div class="field">
+                    <label for="nim">NPM</label>
+                    <input type="text" id="nim" name="nim" />
+                </div>
+
+                <div class="field">
+                    <label for="prodi">Jurusan</label>
+                    <select id="prodi" name="prodi">
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email aktif</label>
+                    <input type="text" id="email" name="email" />
+                </div>
+
+                <div class="field">
+                    <label for="telepon">No. telepon</label>
+                    <input type="text" id="telepon" name="telepon" />
+                </div>
+
+                <div class="field">
+                    <span class="label-text">Jenis kelamin</span>
+                    <div class="options">
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                        <label for="laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="semester">Semester</label>
+                    <select id="semester" name="semester">
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Minat dan pengalaman</legend>
+
+                <div class="field">
+                    <span class="label-text">Divisi yang diminati</span>
+                    <div class="options">
+                        <input type="radio" id="acara" name="divisi" value="Acara" />
+                        <label for="acara">Acara</label>
+                        <input type="radio" id="sdm" name="divisi" value="SDM" />
+                        <label for="sdm">SDM</label>
+                        <input type="radio" id="humas" name="divisi" value="Humas" />
+                        <label for="humas">Humas</label>
+                        <input type="radio" id="media" name="divisi" value="Media" />
+                        <label for="media">Media</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <span class="label-text">Pengalaman</span>
+                    <div class="options">
+                        <input type="checkbox" id="kepanitiaan" name="pengalaman" value="Kepanitiaan" />
+                        <label for="kepanitiaan">Kepanitiaan</label>
+                        <input type="checkbox" id="organisasi" name="pengalaman" value="Organisasi" />
+                        <label for="organisasi">Organisasi</label>
+                        <input type="checkbox" id="volunteer" name="pengalaman" value="Volunteer" />
+                        <label for="volunteer">Volunteer</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <span class="label-text">Kemampuan</span>
+                    <div class="options">
+                        <input type="checkbox" id="publicspeaking" name="kemampuan" value="Public Speaking" />
+                        <label for="publicspeaking">Public Speaking</label>
+                        <input type="checkbox" id="desain" name="kemampuan" value="Desain" />
+                        <label for="desain">Desain</label>
+                        <input type="checkbox" id="fotografi" name="kemampuan" value="Fotografi" />
+                        <label for="fotografi">Fotografi</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Motivasi dan berkas</legend>
+
+                <div class="field">
+                    <label for="alasan">Alasan bergabung</label>
+                    <textarea id="alasan" name="alasan" rows="6"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="cv">Unggah CV (PDF)</label>
+                    <input type="file" id="cv" name="cv" accept="application/pdf" />
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <input type="submit" name="daftar" value="Kirim pendaftaran" />
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
